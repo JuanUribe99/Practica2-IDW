@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+    font-size: 2rem;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+  .title{
+      position: absolute;
+      color: yellow;
+      top: 50%;
+      left: 25%;
+  }
+
+  .subtitle{
+    position: absolute;
+    color: yellow;
+    top: 55%;
+    left: 25%;
+}
+
+.text{
+  position: absolute;
+  color: gray;
+  top: 60%;
+  left: 25%;
+}
+
+  .container1 {
+    display: grid;
+    grid-template-areas:
+      "img1 img1 img1 img2 img2"
+      "img1 img1 img1 img3 img3";
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-areas:
+    "img4 img4 img4 img5 img6"
+    "img7 img8 img8 img8 img6";
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.image1 {
+  grid-area: img1;
+  background-image: url("./../img/ian-dooley-FoF0w-d6Z74-unsplash.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.image2 {
+  grid-area: img2;
+}
+
+.image3 {
+  grid-area: img3;
+}
+
+.image4 {
+  grid-area: img4;
+}
+
+.image5 {
+  grid-area: img5;
+}
+
+.image6 {
+  grid-area: img6;
+}
+
+.image7 {
+  grid-area: img7;
+}
+
+.image8 {
+  grid-area: img8;
+}
